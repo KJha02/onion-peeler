@@ -1,9 +1,9 @@
 import json
 import pdb
-
+import config
 import requests
 
-API_TOKEN = ""
+API_TOKEN = config.LM_API_KEY
 
 def query(payload='',parameters=None,options={'use_cache': False}):
     API_URL = "https://api-inference.huggingface.co/models/EleutherAI/gpt-neo-2.7B"
