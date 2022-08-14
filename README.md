@@ -18,3 +18,11 @@ Took the basics from the previous day and built in speech recognition features. 
 ![speech_recog](https://user-images.githubusercontent.com/78826759/183814696-873df9e8-5b7a-4cf1-a5bf-e90ea8eea173.gif)
 
 The next steps will be adapting a language model to give more dynamic responses to the user's inputs. I'll start on the simple text paradigm created on day 1, and then see if any major adaptations need to be made for using the transformers with speech recognition.
+
+## Day 3: Trying (and failing) at adapting language models to the project
+
+I tried to make calls to the GPT-Neo API so that the onion-peeler would have more context-dependent questions for the user. However, I got some pretty bad results so far, and I'm guessing it's either with how I'm setting up the prompt or the hyperparameters of the model (namely temperature and token size). Here's an image of my code currently not working:
+
+<img width="1356" alt="Screen Shot 2022-08-14 at 12 00 01 AM" src="https://user-images.githubusercontent.com/78826759/184521888-359f623a-e31d-4555-95a0-07d2ecb75612.png">
+
+As you can see, the language model's response (beginning with "J: ") is just a series of question marks, which will have to be improved obviously. At least it is querying the Hugging Face API with no issue.
