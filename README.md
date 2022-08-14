@@ -1,6 +1,8 @@
 # Onion Peeler
 Onions are stinky and can cause problems. Peeling them is a way to get rid of them. Warning, the process may cause a few tears.
 
+Jokes aside, this project looks to peel back on layers of emotion by interactively asking the user "why." Idea drawn from chapter 4 of *The Subtle Art of Not Giving a $@#%* by Mark Manson.
+
 ## Day 1: Making a basic responder
 This is a *very* simple version, but it gets the job done for today. You are prompted to share your thoughts and feelings as explicitly as you want. The program won't judge. It then randomly chooses from the list of premade responses, all of which are different ways of asking the question "why." Here is an image of the program in action:
 
