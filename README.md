@@ -28,3 +28,16 @@ I tried to make calls to the GPT-Neo API so that the onion-peeler would have mor
 <img width="1356" alt="Screen Shot 2022-08-14 at 12 00 01 AM" src="https://user-images.githubusercontent.com/78826759/184521888-359f623a-e31d-4555-95a0-07d2ecb75612.png">
 
 As you can see, the language model's response (beginning with "J: ") is just a series of question marks, which will have to be improved obviously. At least it is querying the Hugging Face API with no issue.
+
+## Day 4: Succeeding at adapting language models to the project
+
+The transformers now give dynamic feedback to user input! I still need to finetune the prompt so that it is more generalizable, as well as tune the temperature and token hyperparameters. But for now, it seems to do a decent job at responding to the user, definitely better than day 3.
+
+<img width="1146" alt="Screen Shot 2022-08-28 at 8 00 19 PM" src="https://user-images.githubusercontent.com/78826759/187100481-68de6b4e-7d44-425a-848f-664113276e38.png">
+
+Next steps:
+
+- Fine tune prompt to be more general
+- Integrate language model with speech recognition
+- Build UI to make user interactions more visually appealing and intuitive
+- Add sentiment analysis over user responses to track success of onion-peeler at helping user over time
